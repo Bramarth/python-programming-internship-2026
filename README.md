@@ -1,26 +1,40 @@
-# Python Hangman Game
+# Stock Portfolio Performance Tracker
 
-A command-line Hangman game developed using Python.
+A Python-based investment portfolio tracking utility developed during the Datheon Engineering Cohort 2026.
 
 ## Features
-- Three difficulty levels: Easy, Medium and Hard.
-- Random word selection from a word bank.
-- Letter and whole-word guessing.
-- Prevention of repeated guesses.
-- Visual Hangman stages.
-- Win and lose conditions.
-- Option to replay the game.
-
-## How to Run
-
-1. Ensure Python is installed.
-2. Clone this repository.
-3. Open the project folder.
-4. Run:
-
-```bash
-python hangman.py
-```
+- Add stock ticker symbols.
+- Record purchase prices and share quantities.
+- Retrieve the latest available stock prices using Yahoo Finance.
+- Calculate individual stock profit and loss.
+- Calculate percentage gains and losses.
+- Calculate total portfolio performance.
+- Store portfolio positions permanently using CSV files.
+- Save performance history to a CSV file.
 
 ## Technologies Used
 - Python 3
+- yfinance
+- CSV module
+- File handling
+
+## How to Run
+
+1. Install Python 3.
+2. Install the required library:
+
+```bash
+pip install yfinance
+```
+
+3. Run the program:
+
+```bash
+python portfolio.py
+```
+
+## Output Files
+- `portfolio.csv` – Stores portfolio positions.
+- `portfolio_summary.csv` – Stores performance logs.
+
+**Note:** Stock prices are retrieved from Yahoo Finance and represent the latest available market data, which may be delayed.
